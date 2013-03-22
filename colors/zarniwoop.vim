@@ -13,9 +13,9 @@
 "
 " File:         zarniwoop.vim
 " URL:          github.com/xironix/zarniwoop.vim
-" Scripts URL:  
+" Scripts URL:  http://www.vim.org/scripts/script.php?script_id=4483
 " Maintainer:   Steffen L. Norgren <github@trollop.org>
-" Version:      1.0
+" Version:      1.1
 " Last Change:  March 22nd, 2013
 " License:      MIT
 " Contributors: NanoTech (nanotech.nanotechcorp.net)
@@ -318,8 +318,8 @@ else
 endif
 
 if version >= 700
-  call s:X("CursorLine","","151515","","",s:termBlack)
-  call s:X("CursorColumn","","1c1c1c","","",s:termBlack)
+  call s:X("CursorLine","","001c1c","","",s:termBlack)
+  call s:X("CursorColumn","","001c1c","","",s:termBlack)
   call s:X("MatchParen","ffffff","80a090","bold","","DarkCyan")
 
   call s:X("TabLine","000000","b0b8c0","italic","",s:termBlack)
@@ -344,12 +344,12 @@ call s:X("StatusLine","f0f0f0","222222","italic","White","Black")
 call s:X("StatusLineNC","a0a0a0","181818","italic","White","Black")
 
 call s:X("VertSplit","777777","403c41","",s:termBlack,s:termBlack)
-call s:X("WildMenu","f0a0c0","302028","","Magenta","")
+call s:X("WildMenu","e1e600","222222","","Yellow","")
 
 call s:X("Folded","a0a8b0","384048","italic",s:termBlack,"")
 call s:X("FoldColumn","535D66","1f1f1f","","",s:termBlack)
 call s:X("SignColumn","777777","333333","","",s:termBlack)
-call s:X("ColorColumn","","000000","","",s:termBlack)
+call s:X("ColorColumn","","2c0000","","",s:termBlack)
 
 call s:X("Title","70b950","","bold","Green","")
 
@@ -371,9 +371,9 @@ hi! link Operator Structure
 call s:X("Type","ffb964","","","Yellow","")
 call s:X("NonText","606060",g:zarniwoop_background_color,"",s:termBlack,"")
 
-call s:X("SpecialKey","444444","1c1c1c","",s:termBlack,"")
+call s:X("SpecialKey","ffffff","0000bf","","White","DarkBlue")
 
-call s:X("Search","bfbf00","404040","underline","Yellow","Black")
+call s:X("Search","ffffff","bf0000","","White","DarkRed")
 
 call s:X("Directory","dad085","","","Yellow","")
 call s:X("ErrorMsg","","902020","","","DarkRed")
